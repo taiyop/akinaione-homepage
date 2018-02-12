@@ -1,0 +1,80 @@
+doctype html
+html
+  head
+    meta[charset="utf-8"]
+    title
+      | GMaps.js — Overlays
+    script[type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"]
+    script[type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"]
+    script[type="text/javascript" src="../gmaps.js"]
+    link[rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css"]
+    link[rel="stylesheet" type="text/css" href="examples.css"]
+    script[type="text/javascript"]
+      |  var map; $(document).ready(function(){ map = new GMaps({ el: '#map', lat: -12.043333, lng: -77.028333 }); map.drawOverlay({ lat: map.getCenter().lat(), lng: map.getCenter().lng(), layer: 'overlayLayer', content: '<div class="overlay">Lima<div class="overlay_arrow above"></div></div>', verticalAlign: 'top', horizontalAlign: 'center' }); }); 
+  body
+    h1
+      | GMaps.js — Overlays
+    .row
+      .span11
+        #map
+      .span6
+        p
+          | You can add overlays using:
+        pre
+          | map.drawOverlay({ lat: -12.043333, lng: -77.028333, content: '<div class="overlay">Lima</div>' });
+        p
+          | You must define 
+          strong
+            | latitude
+          | , 
+          strong
+            | longitude
+          |  and the 
+          strong
+            | content
+          |  of the map overlay.
+        p
+          span.label.notice
+            | Note: 
+          | Also, you must define a 
+          strong
+            | height
+          |  to the 
+          strong
+            | content
+          | .
+        p
+          span.label.notice
+            | Note: 
+          | Also, you can define a 
+          code
+            | verticalAlign
+          | , which can be 
+          code
+            | top
+          | , 
+          code
+            | middle
+          |  or 
+          code
+            | bottom
+          | , and 
+          code
+            | horizontalAlign
+          | , which can be 
+          code
+            | left
+          | , 
+          code
+            | center
+          |  or 
+          code
+            | right
+          | .
+        p
+          span.label.notice
+            | Note: 
+          | Also, you can define a 
+          code
+            | click
+          |  callback method, which will be triggered when the overlay's DOM element is clicked.

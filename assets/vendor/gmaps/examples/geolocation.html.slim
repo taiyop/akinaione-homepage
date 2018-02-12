@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    meta[charset="utf-8"]
+    title
+      | GMaps.js — Geolocation
+    script[type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"]
+    script[type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"]
+    script[type="text/javascript" src="../gmaps.js"]
+    link[rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css"]
+    link[rel="stylesheet" type="text/css" href="examples.css"]
+    script[type="text/javascript"]
+      |  var map; $(document).ready(function(){ var map = new GMaps({ el: '#map', lat: -12.043333, lng: -77.028333 }); GMaps.geolocate({ success: function(position){ map.setCenter(position.coords.latitude, position.coords.longitude); }, error: function(error){ alert('Geolocation failed: '+error.message); }, not_supported: function(){ alert("Your browser does not support geolocation"); }, always: function(){ alert("Done!"); } }); }); 
+  body
+    h1
+      | GMaps.js — Geolocation
+    .row
+      .span11
+        #map
+      .span6
+        p
+          | GMaps.js supports HTML5 Geolocation:
+        pre
+          | GMaps.geolocate({ success: function(position){ map.setCenter(position.coords.latitude, position.coords.longitude); }, error: function(error){ alert('Geolocation failed: '+error.message); }, not_supported: function(){ alert("Your browser does not support geolocation"); }, always: function(){ alert("Done!"); } });
+        p
+          code
+            | GMaps.geolocate
+          |  supports 4 functions: 
+        ul
+          li
+            code
+              | success
+            |  (required): fires when geolocation has been successful
+          li
+            code
+              | error
+            |  (required): fires when geolocation has not been done
+          li
+            code
+              | not_supported
+            |  (required): fires when geolocation is not supported by the browser
+          li
+            code
+              | always
+            |  (optional): fires always after every scenario described above.

@@ -1,0 +1,56 @@
+| <!doctype html> 
+html
+  head
+    meta[charset="utf-8"]
+    title
+      | Jasmine Spec Runner
+    |  <% css.forEach(function(style){ %> 
+    link[rel="stylesheet" type="text/css" href="<%= style %>"]
+    |  <% }) %> <% with (scripts) { %> <% [].concat(polyfills, jasmine, boot, vendor, helpers, src, specs, reporters).forEach(function(script){ %> 
+    script[src="<%= script %>"]
+    |  <% }) %> <% }; %> 
+  body
+    h3
+      | Basic map
+    #basic-map.map
+    h3
+      | Advanced map
+    #advanced-map.map
+    h3
+      | Map with events
+    #map-with-events.map
+    h3
+      | Map with markers
+    #map-with-markers.map
+    h3
+      | Map with custom controls
+    #map-with-custom-controls.map
+    h3
+      | Map with polygons
+    #map-with-polygons.map
+    h3
+      | Map with layers
+    #map-with-layers.map
+    h3
+      | Map with overlays
+    #map-with-overlays.map
+    h3
+      | Map with routes
+    #map-with-routes.map
+    h3
+      | Map with styles
+    #map-with-styles.map
+    h3
+      | Street View Panorama
+    #streetview-standalone-panorama.panorama
+    h3
+      | Map with Street View
+    .with-columns
+      #map-with-streetview.map
+      #streetview-panorama.panorama
+    h3
+      | Street View Panorama with events
+    #streetview-with-events.panorama
+    h3
+      | Events
+    #events.map

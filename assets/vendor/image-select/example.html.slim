@@ -1,0 +1,98 @@
+| <!doctype html> 
+html
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="chrome=1"]
+    meta[name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"]
+    title
+      | Image Select by Web Semantics, Inc.
+    link[rel="stylesheet" href="src/chosen/chosen.css"]
+    link[rel="stylesheet" href="src/ImageSelect.css"]
+    style[type="text/css"]
+      |  body {overflow: hidden;padding:10px;font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;color:#777;font-weight:300;}h2 {margin-top: 0px;}table {width:100%;}td {padding:10px;width:45%;}td:first-child{width:10%;} 
+    script[type="text/javascript"]
+      |  var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-46772370-1']); _gaq.push(['_setDomainName', 'websemantics.github.io']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); 
+  body
+    table
+      thead
+        tr
+          th
+            h2
+              | Type
+          th
+            h2
+              | LTR
+          th
+            h2
+              | RTL
+      tr
+        td
+          h3
+            |  Multiple Select 
+        td
+          select.my-select[multiple="multiple"]
+            option[data-img-src="img/adnan.png"]
+              | Adnan Sagar
+            option[data-img-src="img/rena.png"]
+              | Rena Cugelman
+            option[data-img-src="img/tavis.png" selected="selected"]
+              | Tavis Lochhead
+            option[data-img-src="img/brian.png" selected="selected"]
+              | Brain Cugelman
+        td
+          select.my-select.chosen-rtl[multiple="multiple"]
+            option[data-img-src="img/adnan.png"]
+              | عدنان صقر
+            option[data-img-src="img/rena.png"]
+              | رينا كوقلمان
+            option[data-img-src="img/tavis.png" selected="selected"]
+              | تافس لوكهيد
+            option[data-img-src="img/brian.png" selected="selected"]
+              | براين كوقلمان
+      tr
+        td
+          h3
+            |  Single Select 
+        td
+          select.my-select
+            option[data-img-src="img/adnan.png"]
+              | Adnan Sagar
+            option[data-img-src="img/rena.png"]
+              | Rena Cugelman
+            option[data-img-src="img/tavis.png"]
+              | Tavis Lochhead
+            option[data-img-src="img/brian.png" selected="selected"]
+              | Brain Cugelman
+        td
+          select.my-select.chosen-rtl[disabled]
+            option[data-img-src="img/adnan.png"]
+              | عدنان صقر
+            option[data-img-src="img/rena.png"]
+              | رينا كوقلمان
+            option[data-img-src="img/tavis.png"]
+              | تافس لوكهيد
+            option[data-img-src="img/brian.png" selected="selected"]
+              | براين كوقلمان
+      tr
+        td
+          h3
+            |  Optgroup Tag 
+        td
+          select.my-select
+            optgroup[label="Team A"]
+              option[data-img-src="img/adnan.png"]
+                | Adnan Sagar
+              option[data-img-src="img/rena.png"]
+                | Rena Cugelman
+            optgroup[label="Team B"]
+              option[data-img-src="img/tavis.png" selected="selected"]
+                | Tavis Lochhead
+              option[data-img-src="img/brian.png"]
+                | Brain Cugelman
+        td
+
+    script[src="src/jquery/dist/jquery.min.js" type="text/javascript"]
+    script[src="src/chosen/chosen.jquery.js" type="text/javascript"]
+    script[src="src/ImageSelect.jquery.js" type="text/javascript"]
+    script[type="text/javascript"]
+      |  $(".my-select").chosen({width:"100%"}); 

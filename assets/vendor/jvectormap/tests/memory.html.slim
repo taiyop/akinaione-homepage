@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title
+      | jVectorMap demo
+    link[rel="stylesheet" media="all" href="../jquery-jvectormap.css"]
+    script[src="assets/jquery-1.8.2.js"]
+    script[src="../jquery-jvectormap.js"]
+    script[src="../lib/jquery-mousewheel.js"]
+    script[src="../src/jvectormap.js"]
+    script[src="../src/abstract-element.js"]
+    script[src="../src/abstract-canvas-element.js"]
+    script[src="../src/abstract-shape-element.js"]
+    script[src="../src/svg-element.js"]
+    script[src="../src/svg-group-element.js"]
+    script[src="../src/svg-canvas-element.js"]
+    script[src="../src/svg-shape-element.js"]
+    script[src="../src/svg-path-element.js"]
+    script[src="../src/svg-circle-element.js"]
+    script[src="../src/svg-image-element.js"]
+    script[src="../src/svg-text-element.js"]
+    script[src="../src/vml-element.js"]
+    script[src="../src/vml-group-element.js"]
+    script[src="../src/vml-canvas-element.js"]
+    script[src="../src/vml-shape-element.js"]
+    script[src="../src/vml-path-element.js"]
+    script[src="../src/vml-circle-element.js"]
+    script[src="../src/vml-image-element.js"]
+    script[src="../src/map-object.js"]
+    script[src="../src/region.js"]
+    script[src="../src/marker.js"]
+    script[src="../src/vector-canvas.js"]
+    script[src="../src/simple-scale.js"]
+    script[src="../src/ordinal-scale.js"]
+    script[src="../src/numeric-scale.js"]
+    script[src="../src/color-scale.js"]
+    script[src="../src/legend.js"]
+    script[src="../src/data-series.js"]
+    script[src="../src/proj.js"]
+    script[src="../src/map.js"]
+    script[src="assets/jquery-jvectormap-world-mill-en.js"]
+    script
+      |  $(function(){ $('#start').click(function(){ var map; for (var i = 0; i < 100; i++) { map = new jvm.Map({ map: 'world_mill_en', container: $('#map1') }); map.remove(); } }); }) 
+  body
+    #map1[style="width: 600px; height: 400px"]
+    input#start[type="button" value="Start"]

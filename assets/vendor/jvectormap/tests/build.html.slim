@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title
+      | jVectorMap demo
+    link[rel="stylesheet" media="all" href="../jquery-jvectormap.css"]
+    script[src="assets/jquery-1.8.2.js"]
+    script[src="../jquery.jvectormap.min.js"]
+    script[src="assets/jquery-jvectormap-world-mill-en.js"]
+    script
+      |  $(function(){ $('#map').vectorMap({ map: 'world_mill_en' }); }) 
+  body
+    #map[style="width: 600px; height: 400px"]

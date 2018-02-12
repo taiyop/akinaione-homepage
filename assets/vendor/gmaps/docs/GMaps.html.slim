@@ -1,0 +1,995 @@
+doctype html
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    title
+      | GMaps - Documentation
+    script[src="scripts/prettify/prettify.js"]
+    script[src="scripts/prettify/lang-css.js"]
+    link[type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"]
+    link[type="text/css" rel="stylesheet" href="styles/prettify.css"]
+    link[type="text/css" rel="stylesheet" href="styles/jsdoc.css"]
+  body
+    input#nav-trigger.nav-trigger[type="checkbox"]
+    label.navicon-button.x[for="nav-trigger"]
+
+    .navicon
+    label.overlay[for="nav-trigger"]
+    nav
+      h2
+        a[href="index.html"]
+          | Home
+      h3
+        | Classes
+      ul
+        li
+          a[href="GMaps.html"]
+            | GMaps
+          ul.methods
+            li[data-type="method"]
+              a[href="GMaps.html#addControl"]
+                | addControl
+            li[data-type="method"]
+              a[href="GMaps.html#fitLatLngBounds"]
+                | fitLatLngBounds
+            li[data-type="method"]
+              a[href="GMaps.html#fitZoom"]
+                | fitZoom
+            li[data-type="method"]
+              a[href="GMaps.html#getElement"]
+                | getElement
+            li[data-type="method"]
+              a[href="GMaps.html#hideContextMenu"]
+                | hideContextMenu
+            li[data-type="method"]
+              a[href="GMaps.html#refresh"]
+                | refresh
+            li[data-type="method"]
+              a[href="GMaps.html#removeControl"]
+                | removeControl
+            li[data-type="method"]
+              a[href="GMaps.html#setCenter"]
+                | setCenter
+            li[data-type="method"]
+              a[href="GMaps.html#setContextMenu"]
+                | setContextMenu
+            li[data-type="method"]
+              a[href="GMaps.html#zoomIn"]
+                | zoomIn
+            li[data-type="method"]
+              a[href="GMaps.html#zoomOut"]
+                | zoomOut
+    #main
+      h1.page-title
+        | GMaps
+      section
+        header
+          h2
+            |  GMaps 
+          .class-description
+            p
+              | GMaps
+        article
+          .container-overview
+            h2
+              | Constructor
+            h4#GMaps.name
+              span.type-signature
+              | new GMaps
+              span.signature
+                | (options)
+              span.type-signature
+            dl.details
+              dt.tag-source
+                | Source:
+              dd.tag-source
+                ul.dummy
+                  li
+                    a[href="gmaps.core.js.html"]
+                      | gmaps.core.js
+                    | , 
+                    a[href="gmaps.core.js.html#line152"]
+                      | line 152
+            .description
+              p
+                | Creates a new GMaps instance, including a Google Maps map.
+            h5
+              | Parameters:
+            table.params
+              thead
+                tr
+                  th
+                    | Name
+                  th
+                    | Type
+                  th.last
+                    | Description
+              tbody
+                tr
+                  td.name
+                    code
+                      | options
+                  td.type
+                    span.param-type
+                      | object
+                  td.description.last
+                    p
+                      code
+                        | options
+                      |  accepts all the 
+                      a[href="https://developers.google.com/maps/documentation/javascript/reference#MapOptions"]
+                        | MapOptions
+                      |  and 
+                      a[href="https://developers.google.com/maps/documentation/javascript/reference#Map"]
+                        | events
+                      |  listed in the Google Maps API. Also accepts:
+                    ul
+                      li
+                        code
+                          | lat
+                        |  (number): Latitude of the map's center
+                      li
+                        code
+                          | lng
+                        |  (number): Longitude of the map's center
+                      li
+                        code
+                          | el
+                        |  (string or HTMLElement): container where the map will be rendered
+                      li
+                        code
+                          | markerClusterer
+                        |  (function): A function to create a marker cluster. You can use MarkerClusterer or MarkerClustererPlus.
+          h3.subsection-title
+            | Members
+          h4#controls.name
+            span.type-signature
+            | controls
+            span.type-signature
+              |  :array
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line242"]
+                    | line 242
+          .description
+            p
+              | Collection of custom controls in the map UI
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | array
+          h4#el.name
+            span.type-signature
+            | el
+            span.type-signature
+              |  :HTMLElement
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line222"]
+                    | line 222
+          .description
+            p
+              | Container element
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | HTMLElement
+          h4#layers.name
+            span.type-signature
+            | layers
+            span.type-signature
+              |  :array
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line254"]
+                    | line 254
+          .description
+            p
+              | Collection of KML/GeoRSS and FusionTable layers
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | array
+          h4#map.name
+            span.type-signature
+            | map
+            span.type-signature
+              |  :google.maps.Map
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line323"]
+                    | line 323
+          .description
+            p
+              | Google Maps map instance
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | google.maps.Map
+          h4#markerClusterer.name
+            span.type-signature
+            | markerClusterer
+            span.type-signature
+              |  :object
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line331"]
+                    | line 331
+          .description
+            p
+              | Marker Clusterer instance
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | object
+          h4#markers.name
+            span.type-signature
+            | markers
+            span.type-signature
+              |  :array
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line266"]
+                    | line 266
+          .description
+            p
+              | Collection of map's markers
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | array
+          h4#overlays.name
+            span.type-signature
+            | overlays
+            span.type-signature
+              |  :array
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line248"]
+                    | line 248
+          .description
+            p
+              | Collection of map's overlays
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | array
+          h4#polygons.name
+            span.type-signature
+            | polygons
+            span.type-signature
+              |  :array
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line284"]
+                    | line 284
+          .description
+            p
+              | Collection of map's polygons
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | array
+          h4#polylines.name
+            span.type-signature
+            | polylines
+            span.type-signature
+              |  :array
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line272"]
+                    | line 272
+          .description
+            p
+              | Collection of map's lines
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | array
+          h4#routes.name
+            span.type-signature
+            | routes
+            span.type-signature
+              |  :array
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line278"]
+                    | line 278
+          .description
+            p
+              | Collection of map's routes requested by GMaps#getRoutes, GMaps#renderRoute, GMaps#drawRoute, GMaps#travelRoute or GMaps#drawSteppedRoute
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | array
+          h4#singleLayers.name
+            span.type-signature
+            | singleLayers
+            span.type-signature
+              |  :object
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line260"]
+                    | line 260
+          .description
+            p
+              | Collection of data layers (See GMaps#addLayer)
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | object
+          h4#zoom.name
+            span.type-signature
+            | zoom
+            span.type-signature
+              |  :number
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line292"]
+                    | line 292
+          .description
+            p
+              | Current map's zoom
+          h5
+            | Type:
+          ul
+            li
+              span.param-type
+                | number
+          h3.subsection-title
+            | Methods
+          h4#addControl.name
+            span.type-signature
+            | addControl
+            span.signature
+              | (options)
+            span.type-signature
+              |  → {HTMLElement}
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.controls.js.html"]
+                    | gmaps.controls.js
+                  | , 
+                  a[href="gmaps.controls.js.html#line67"]
+                    | line 67
+          .description
+            p
+              | Add a custom control to the map UI.
+          h5
+            | Parameters:
+          table.params
+            thead
+              tr
+                th
+                  | Name
+                th
+                  | Type
+                th.last
+                  | Description
+            tbody
+              tr
+                td.name
+                  code
+                    | options
+                td.type
+                  span.param-type
+                    | object
+                td.description.last
+                  p
+                    | The 
+                    code
+                      | options
+                    |  object should contain:
+                  ul
+                    li
+                      code
+                        | style
+                      |  (object): The keys and values of this object should be valid CSS properties and values.
+                    li
+                      code
+                        | id
+                      |  (string): The HTML id for the custom control.
+                    li
+                      code
+                        | classes
+                      |  (string): A string containing all the HTML classes for the custom control.
+                    li
+                      code
+                        | content
+                      |  (string or HTML element): The content of the custom control.
+                    li
+                      code
+                        | position
+                      |  (string): Any valid 
+                      a[href="https://developers.google.com/maps/documentation/javascript/controls#ControlPositioning"]
+                        code
+                          | google.maps.ControlPosition
+                      |  value, in lower or upper case.
+                    li
+                      code
+                        | events
+                      |  (object): The keys of this object should be valid DOM events. The values should be functions.
+                    li
+                      code
+                        | disableDefaultStyles
+                      |  (boolean): If false, removes the default styles for the controls like font (family and size), and box shadow.
+          h5
+            | Returns:
+          dl.param-type
+            dt
+              |  Type 
+            dd
+              span.param-type
+                | HTMLElement
+          h4#fitLatLngBounds.name
+            span.type-signature
+            | fitLatLngBounds
+            span.signature
+              | (latLngs)
+            span.type-signature
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line539"]
+                    | line 539
+          .description
+            p
+              | Adjust the map zoom to include all the coordinates in the 
+              code
+                | latLngs
+              |  array.
+          h5
+            | Parameters:
+          table.params
+            thead
+              tr
+                th
+                  | Name
+                th
+                  | Type
+                th.last
+                  | Description
+            tbody
+              tr
+                td.name
+                  code
+                    | latLngs
+                td.type
+                  span.param-type
+                    | array
+                td.description.last
+                  p
+                    | Collection of 
+                    code
+                      | google.maps.LatLng
+                    |  objects.
+          h4#fitZoom.name
+            span.type-signature
+            | fitZoom
+            span.signature
+              | ()
+            span.type-signature
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line520"]
+                    | line 520
+          .description
+            p
+              | Adjust the map zoom to include all the markers added in the map.
+          h4#getElement.name
+            span.type-signature
+            | getElement
+            span.signature
+              | ()
+            span.type-signature
+              |  → {HTMLElement}
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line571"]
+                    | line 571
+          .description
+            p
+              | Return the HTML element container of the map.
+          h5
+            | Returns:
+          .param-desc
+            p
+              | the element container.
+          dl.param-type
+            dt
+              |  Type 
+            dd
+              span.param-type
+                | HTMLElement
+          h4#hideContextMenu.name
+            span.type-signature
+            | hideContextMenu
+            span.signature
+              | ()
+            span.type-signature
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line461"]
+                    | line 461
+          .description
+            p
+              | Hide the current context menu
+          h4#refresh.name
+            span.type-signature
+            | refresh
+            span.signature
+              | ()
+            span.type-signature
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line513"]
+                    | line 513
+          .description
+            p
+              | Trigger a 
+              code
+                | resize
+              |  event, useful if you need to repaint the current map (for changes in the viewport or display / hide actions).
+          h4#removeControl.name
+            span.type-signature
+            | removeControl
+            span.signature
+              | (control)
+            span.type-signature
+              |  → {HTMLElement}
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.controls.js.html"]
+                    | gmaps.controls.js
+                  | , 
+                  a[href="gmaps.controls.js.html#line82"]
+                    | line 82
+          .description
+            p
+              | Remove a control from the map. 
+              code
+                | control
+              |  should be a control returned by 
+              code
+                | addControl()
+              | .
+          h5
+            | Parameters:
+          table.params
+            thead
+              tr
+                th
+                  | Name
+                th
+                  | Type
+                th.last
+                  | Description
+            tbody
+              tr
+                td.name
+                  code
+                    | control
+                td.type
+                  span.param-type
+                    | HTMLElement
+                td.description.last
+                  p
+                    | One of the controls returned by 
+                    code
+                      | addControl()
+                    | .
+          h5
+            | Returns:
+          .param-desc
+            p
+              | the removed control.
+          dl.param-type
+            dt
+              |  Type 
+            dd
+              span.param-type
+                | HTMLElement
+          h4#setCenter.name
+            span.type-signature
+            | setCenter
+            span.signature
+              | (lat, lng, callback
+              span.signature-attributes
+                | opt
+              | )
+            span.type-signature
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line558"]
+                    | line 558
+          .description
+            p
+              | Center the map using the 
+              code
+                | lat
+              |  and 
+              code
+                | lng
+              |  coordinates.
+          h5
+            | Parameters:
+          table.params
+            thead
+              tr
+                th
+                  | Name
+                th
+                  | Type
+                th
+                  | Attributes
+                th.last
+                  | Description
+            tbody
+              tr
+                td.name
+                  code
+                    | lat
+                td.type
+                  span.param-type
+                    | number
+                td.attributes
+
+                td.description.last
+                  p
+                    | Latitude of the coordinate.
+              tr
+                td.name
+                  code
+                    | lng
+                td.type
+                  span.param-type
+                    | number
+                td.attributes
+
+                td.description.last
+                  p
+                    | Longitude of the coordinate.
+              tr
+                td.name
+                  code
+                    | callback
+                td.type
+                  span.param-type
+                    | function
+                td.attributes
+                  |  <optional>
+                  br
+                td.description.last
+                  p
+                    | Callback that will be executed after the map is centered.
+          h4#setContextMenu.name
+            span.type-signature
+            | setContextMenu
+            span.signature
+              | (options)
+            span.type-signature
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line417"]
+                    | line 417
+          .description
+            p
+              | Add a context menu for a map or a marker.
+          h5
+            | Parameters:
+          table.params
+            thead
+              tr
+                th
+                  | Name
+                th
+                  | Type
+                th.last
+                  | Description
+            tbody
+              tr
+                td.name
+                  code
+                    | options
+                td.type
+                  span.param-type
+                    | object
+                td.description.last
+                  p
+                    | The 
+                    code
+                      | options
+                    |  object should contain:
+                  ul
+                    li
+                      code
+                        | control
+                      |  (string): Kind of control the context menu will be attached. Can be "map" or "marker".
+                    li
+                      code
+                        | options
+                      |  (array): A collection of context menu items:
+                      ul
+                        li
+                          code
+                            | title
+                          |  (string): Item's title shown in the context menu.
+                        li
+                          code
+                            | name
+                          |  (string): Item's identifier.
+                        li
+                          code
+                            | action
+                          |  (function): Function triggered after selecting the context menu item.
+          h4#zoomIn.name
+            span.type-signature
+            | zoomIn
+            span.signature
+              | (magnitude
+              span.signature-attributes
+                | opt
+              | )
+            span.type-signature
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line580"]
+                    | line 580
+          .description
+            p
+              | Increase the map's zoom.
+          h5
+            | Parameters:
+          table.params
+            thead
+              tr
+                th
+                  | Name
+                th
+                  | Type
+                th
+                  | Attributes
+                th.last
+                  | Description
+            tbody
+              tr
+                td.name
+                  code
+                    | magnitude
+                td.type
+                  span.param-type
+                    | number
+                td.attributes
+                  |  <optional>
+                  br
+                td.description.last
+                  p
+                    | The number of times the map will be zoomed in.
+          h4#zoomOut.name
+            span.type-signature
+            | zoomOut
+            span.signature
+              | (magnitude
+              span.signature-attributes
+                | opt
+              | )
+            span.type-signature
+          dl.details
+            dt.tag-source
+              | Source:
+            dd.tag-source
+              ul.dummy
+                li
+                  a[href="gmaps.core.js.html"]
+                    | gmaps.core.js
+                  | , 
+                  a[href="gmaps.core.js.html#line592"]
+                    | line 592
+          .description
+            p
+              | Decrease the map's zoom.
+          h5
+            | Parameters:
+          table.params
+            thead
+              tr
+                th
+                  | Name
+                th
+                  | Type
+                th
+                  | Attributes
+                th.last
+                  | Description
+            tbody
+              tr
+                td.name
+                  code
+                    | magnitude
+                td.type
+                  span.param-type
+                    | number
+                td.attributes
+                  |  <optional>
+                  br
+                td.description.last
+                  p
+                    | The number of times the map will be zoomed out.
+    br.clear
+    footer
+      |  Documentation generated by 
+      a[href="https://github.com/jsdoc3/jsdoc"]
+        | JSDoc 3.4.0
+      |  on Sun Apr 03 2016 18:36:23 GMT-0400 (EDT) using the Minami theme. 
+    script
+      | prettyPrint();
+    script[src="scripts/linenumber.js"]

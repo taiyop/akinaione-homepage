@@ -1,0 +1,167 @@
+doctype html
+html[lang="en"]
+  head
+    meta[charset="UTF-8"]
+    title
+      | Hamburgers by Jonathan Suh
+    link[rel="stylesheet" href="hamburgers.css"]
+    style
+      |  code { display: inline-block; } code, .hamburger { vertical-align: middle; } 
+  body
+    .hamburger.hamburger--3dx
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--3dx
+    br
+    .hamburger.hamburger--3dx-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--3dx-r
+    br
+    .hamburger.hamburger--3dy
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--3dy
+    br
+    .hamburger.hamburger--3dy-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--3dy-r
+    br
+    .hamburger.hamburger--arrow
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--arrow
+    br
+    .hamburger.hamburger--arrow-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--arrow-r
+    br
+    .hamburger.hamburger--arrowalt
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--arrowalt
+    br
+    .hamburger.hamburger--arrowalt-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--arrowalt-r
+    br
+    .hamburger.hamburger--boring
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--boring
+    br
+    .hamburger.hamburger--collapse
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--collapse
+    br
+    .hamburger.hamburger--collapse-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--collapse-r
+    br
+    .hamburger.hamburger--elastic
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--elastic
+    br
+    .hamburger.hamburger--elastic-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--elastic-r
+    br
+    .hamburger.hamburger--emphatic
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--emphatic
+    br
+    .hamburger.hamburger--emphatic-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--emphatic-r
+    br
+    .hamburger.hamburger--slider
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--slider
+    br
+    .hamburger.hamburger--slider-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--slider-r
+    br
+    .hamburger.hamburger--spin
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--spin
+    br
+    .hamburger.hamburger--spin-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--spin-r
+    br
+    .hamburger.hamburger--stand
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--stand
+    br
+    .hamburger.hamburger--stand-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--stand-r
+    br
+    .hamburger.hamburger--stand
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--stand
+    br
+    .hamburger.hamburger--stand-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--stand-r
+    br
+    .hamburger.hamburger--squeeze
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--squeeze
+    br
+    .hamburger.hamburger--vortex
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--vortex
+    br
+    .hamburger.hamburger--vortex-r
+      .hamburger-box
+        .hamburger-inner
+    code
+      | hamburger--vortex-r
+    script
+      |  /** * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options * * @private * @author Todd Motto * @link https://github.com/toddmotto/foreach * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList * @callback requestCallback callback - Callback function for each iteration. * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback. * @returns {} */ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)}; var hamburgers = document.querySelectorAll(".hamburger"); if (hamburgers.length > 0) { forEach(hamburgers, function(hamburger) { hamburger.addEventListener("click", function() { this.classList.toggle("is-active"); }, false); }); } 

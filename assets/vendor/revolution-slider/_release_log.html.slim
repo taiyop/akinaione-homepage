@@ -1,0 +1,1043 @@
+.slider-revolution-update-list
+  h3.version-number
+    | Version 5.4.4 StarPath (18th May 2017)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  li
+    | Set Parallax BG and Layers Speed/Delay Globally independent. 15 Levels Depth still available ! 
+  li
+    | Added Color Animation Attributes like Background and Font Color for Shape and Text Layers
+  li
+    | Added Brightness Filter Attribute for Idle, Hover, Start and End Animation frames to provide new Effects on Layers
+  li
+    | Added Grayscale, Brightness, Blur Slide Transitions in different Combinations
+  ul
+
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed YouTube and Vimeo Video Rewind issue on reenter specific slides.
+    li
+      | Fixed Toggle FullScreen Mode where YouTube and Vimeo Videos were not Play any more
+    li
+      | Ken Burn Slide Effect Issues at first Slide Change has been fixed
+    li
+      | First Covered BG Video in some Templates and Themes were caclualted on the wrong Height Base. Issue is fixed due a double call on setSize at preparing the Video
+    li
+      | Safari Scroll, 3D and Blur Effects with missing layers Bug has been fixed by adding a preserve-3d transform style on Parallax Wrap level to the current layers
+    li
+      | Image Filters on Ken Burn Animated BG Elements are working now fine. FireFox is still a bit Laggy if CSS Filters are enabled on Ken Burn Elements
+    li
+      | Fixed Responsive Levels not working properly in certain constellations
+    li
+      | Fixed Rotation issues on Slide Main Image transitions (like Box Slot Animation Rotated)
+    li
+      | Updaed Colorpicker JS to fix some issues with Progress Bar.
+    li
+      | Fixed HTML5 volume not beeing written
+  h3.version-number
+    | Version 5.4.3.2 StarPath (9th May 2017)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added new AddOn Before/After
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Changed Google Fonts | to %7C for HTML/CSS Validation
+    li
+      | Fixed several typos
+  h3.version-number
+    | Version 5.4.3.1 StarPath (02nd May 2017)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Introducing jQuery.fn.getRSVersion() and jQuery.fn.getRSVersion(true) functions to get Core and all Loded Module Version numbers.
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Several Typos
+    li
+      | Fixed Deep Linking in Carousel Slider
+    li
+      | Fixed Issue where YouTube Video Background in Pause / End Mode shows the Default YouTube Cover image instead of the Predefined poster Image
+    li
+      | Fixed Wrong Navigation Direction / Thumbnail Images on Arrow Navigation in some kind of Cases
+  h3.version-number
+    | Version 5.4.2 StarPath (08th April 2017)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | InLine Play of HTML5 Videos on Android and on iOS are supported
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed FadeFromRight Animation
+    li
+      | Fixed RevKill() Bugs and updated Focus/Blur features which will only triggered once. Blur Focus Listener will also called once per DOM instead of per Slider
+    li
+      | Fixed Columns Margin calculation. Columns now can be perfectly spaced with the 4 level margin and padding attributes
+    li
+      | Fixed Column BG Animation and Position Calculations.
+    li
+      | Fixed Facebook API Issue
+  h3.version-number
+    | Version 5.4.1 StarPath (9th March 2017)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added Blur Effect on Ken Burn Animation. Start and End Value can be defined
+    li
+      | Added Letter Spacing on Multiple Levels
+    li
+      | Added a feature to allow autoplay HTML5 Videos on Android Devices also
+    li
+      | Added Split Animation Direction like forwards, backwards, middle to edge, edge to middle, random
+    li
+      | Random Split Transitions will calculate on demand Random values per Splitted element
+    li
+      | Added Split Animation Cycles to create Animation patterns on Splitted elements
+    li
+      | Introducing new AddOn "Slicey"
+    li
+      | Introducing new AddOn "FilmStrip"
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+      | Added a new Option to enable/disable Desktop Swipe functions. This will allow you to enable Swipe on Mobile Devices, and still make Content Selectable on Desktop Systems.
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Scroll Below bugs
+    li
+      | Bug fixed where "Split Out Animation" breaks none "Split In Animation" on Layers
+    li
+      | Fixed bugs with SVG Stroke Animation / Coloring on Simple Idle, and on Idle/Hover status
+  h3.version-number
+    | Version 5.3.1.6 StarPath (10th January 2017)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added Ease and Speed to Scroll Below Action to make individual Scroll Effects
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Slide Link was not linking to the correct Slides in some cases.
+    li
+      | Slide Link was not visible at start
+  h3.version-number
+    | Version 5.3.1.5 StarPath (10th December 2016)
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  |  <ul 
+  li
+    | Removed unneeded CSS Lines and minified the CSS Export of settings.css
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed an issue where static element Position Calculation was broken in some kind of cases
+    li
+      | Fixed an issue where inline styled Content lost its FontWeight, Line Height and Font Size in some kind of cases
+    li
+      | Fixed a Rendering issue with Row Oversizing in case Image element added into Columns
+    li
+      | ID of Wrapper Elements added via Option was not available on Frontend
+    li
+      | Fixed Layer Action issues where multiple Actions on same Layer was not recognised on FrontEnd
+    li
+      | Fixed Border issues on Buttons
+    li
+      | Loading of Video Elements in Rows driven by Actions was not Showing up in some kind of rare cases
+  h3.version-number
+    | Version 5.3.1.1 StarPath (8th December 2016)
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+      | Removed unneeded CSS Lines and minified the CSS Export of settings.css
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed a strange Effect on Scroll where Stick Style Menu was not clearly docked on the top, but was flickering before docking
+  h3.version-number
+    | Version 5.3.1 StarPath (1st December 2016)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added option to show layers on all Slides in Carousel mode
+    li
+      | Added option to use YouTube video cover for YouTube video background on slides
+    li
+      | New Option added to fade Out Hero Content optional when Parallax Scroll activated, like Slider BG, Layer, Static Layer, Parallax Layer
+    li
+      | Added an option to set the Group Sizes by %. Content of Groups can be set also % based
+    li
+      | Added new Option for Easing and Speed of Carousel Slides
+    li
+      | Added an option which allows to show Carousel first in Viewport.
+    li
+      | Added option for layers to add an tabindex.
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+      | Carousel Slides will always fade in first without a Start Slide effect which was annoying in some kind of situations
+    li
+      | Carousel Slider will act on Swipe even due Clickable elements
+    li
+      | Font Awesome Library Updated to 4.7.0
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Image Filter issues related to Slide Changes
+    li
+      | Fixed Slide Transitions where Transion should happen based on the Slide Direction
+    li
+      | Flickering issue by Static Layers with Action fixed
+    li
+      | Fixed missing Styles after Hovering Layers in Firefox
+    li
+      | Toggled Content without Action was not swapping its Toggled Status. Issue is fixed now
+    li
+      | Fixed Grid Based Static Layer Positions in Carousel Sliders
+    li
+      | Fixed the Row / Column / InnerLayer Timing
+    li
+      | Hover on SVG Elements was not coloring well the Idle or Hover status has been fixed
+    li
+      | Fixed a problem where Sliders with Full Slide link in Carousel and in some special mode had issues with the Full Slide Link layer
+    li
+      | Static Layer issues with Invisible Slides where Static Layers were not disappearing on Unvisible Slides on demenad
+    li
+      | Fixed WhiteBoard's multiple "Hand" issue
+    li
+      | Fixed Hover / Idle issues where quick focus/blur events would not remove the Hover animation effects from the layers
+  h3.version-number
+    | Version 5.3.0.2 StarPath (26th October 2016)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Introducing Rows and Columns as Layer Groups
+    li
+      | Added Layer Groups for logical and physical grouping of Layers.
+    li
+      | Animations are now allowed in multiple levels for Groups, Rows, Columns and wrapped Layers
+    li
+      | Added Margin for relative Layers (Columns, Rows, Layers in Columns)
+    li
+      | Rows can be sorted within Top, Middle and Bottom Containers
+    li
+      | Added Layer Background Images for Text, Column, Row, Group and Shape
+    li
+      | Slides will receive an Auto Height with Rows and Columns
+    li
+      | Added CSS Blend Modes for Text Layer to get some exclusive effects on backgrounds. (Will not work with older IE Browser)
+    li
+      | Added device based level for Spacings like Paddings, Margins, Text-Aligns which can be set now individual based on Responsive Level
+    li
+      | Added new option on Slider Import, to be able to create blank pages with the Slider inside
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+      | Changed Button Hover feature to allow Hover during the Layer Animation already. Direct feedback from Button to customer
+    li
+      | Changed the Layer Animation Core. Introducing Timeline feature which will allow build multiple frames within one Layer Animation
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Slot Animation Issues where Slot Amount was ignored in Fade Slots Tranitions
+    li
+      | Fixed issue where Layer On Complete Event was triggered twice on Slide Changes. This had negative influence i.e. on Add Ons like White Board
+    li
+      | Fixed Dotted Overlays issues on Slides
+    li
+      | Fixed a bug where FullScreen Slider Offset Container parameter was not working with the Carousel Slider Layout
+    li
+      | Fixed Slide Direction Animation on HOrizontal and Vertical direction when slide change has been triggered by Mouse Scroll
+    li
+      | Fixed Ken Burns Issues where Horizontal and Vertical Start Offsets were not implemented well
+    li
+      | YouTube Playback on Mobile Phones lost Focus and lost Video after Slide Change in some rare situations has been fixed
+    li
+      | Fixed a YouTube Bug which was not allow to trigger YouTube Videos via Layer Action on Mobiles
+    li
+      | Fixed Blurry Buttons in YouTube Videos on Mobile Phones
+    li
+      | Issue where Pendulum Easing was ignored in frontend fixed
+    li
+      | Parallax effet on Background Media was not working without Existing Layer in Slide has been fixed
+    li
+      | Fixed Split Animation not beeing written in some cases for the out animation
+    li
+      | Fixed an issue where in Viewpoint Scrolled Slides did not start straight but with a small delay
+    li
+      | Fixed Restarted Static Layers which are animating on each Slide if Start time was smaller than 100ms
+    li
+      | Fixed Syntax and Logical Issues like Removing a Slide from Slider based on the Feedback of Sébastien Ledan (http://dotevo.com)! Thank you for the great Feedbacks and Suggestions
+    li
+      | Fixed Slider disappearing in IE11 if Parallax Mode is activated. Double parameter definition in Animation Engine has been fixed
+    li
+      | Fixed an issue where cross referencing Static Layers were disappeared
+  h3.version-number
+    | Version 5.2.6 StarPath (1st June 2016)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Included 9 New Templates. Free Templates as Landing page with over 21 new Sliders included
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Some Parallax Issues
+  h3.version-number
+    | Version 5.2.5.4 StarPath (1st June 2016)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added option to modify z-index for layers, can be set in the hover styles
+  h3.version-number
+    | Version 5.2.5.1 StarPath (4th May 2016)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added IgnoreHeightChange for Android Phones as Fall Back which will avoid the small Jump on Mobile Phones if Location Bar is removed/resized on scroll
+    li
+      | Added Dark/Light BG for Layer Style Selector, which helps to pick the right Style on demand
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+      | Changed Vimeo Frogaloop Script Loading Origin from HTTP:// to HTTPS://
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Action Delay Issues
+    li
+      | Eliminated Loading issues, where Static Layer Load time was over 5s or Slider was simple not starting due high loading times
+  h3.version-number
+    | Version 5.2.5 StarPath (16th April 2016)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added option to set the ID for the Slider which will also set dynamical added container ID's based on the preseted ID
+    li
+      | Delay option added to the Jump To Slide Layer Action
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+      | Toggle Content on Click event has been extended. Toggle Content without Actions and also on all actions can be added.
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed minHeight settings where entered suffix broke the Slider output.
+  h3.version-number
+    | Version 5.2.4.1 StarPath (08th April 2016)
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+      | Changed HTML5 example URLs as the old ones are no longer available
+    li
+      | Calculation of Wave Loop Effect changed to respect the real X/Y Offsets
+  h3.version-number
+    | Version 5.2.4 StarPath (01st April 2016)
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed and Issue where Layers were disappearing in Google Chrome after revisiting the slide
+    li
+      | Fixed a bug with SVG Objects, where styling was only attached if the SVG Object was loading from cache
+  h3.version-number
+    | Version 5.2.3 StarPath (17th March 2016)
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Next Slide At End Bug, Loop, and Loop but Keep Slide Progress Bug for Video Backgrounds
+  h3.version-number
+    | Version 5.2.2 StarPath (14th March 2016)
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Layer Timing issue where Layer could not start any more at 0ms
+    li
+      | Fixed an Issue where Layers disappearing after a long time period.
+    li
+      | Fixed Slider / Layer Grid Based Align options for Navigation Elements
+    li
+      | Fixed calculation errors of navigation elements
+    li
+      | Fixed an issue where slidelinks on carousel slides was not working properly
+    li
+      | Fixed Static Layer container perspective on 3D Parallax Animations. Static Layers and Layers will have now the same View Perspective. To achieve this, Static Layers will always overlay simple Layers in 3D Parallax Mode
+    li
+      | Scrolling by Scroll Bar will also trigger Parallax and Start Slider functions now
+  h3.version-number
+    | Version 5.2.0 StarPath (12th February 2016)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added Navigation Position Aligned By option to allow Navigation element positioned within the Layer Grid also
+    li
+      | Added individual RTL Option to Arrows, Bullets, Tabs and Tumbnails to change the Slider direction and the order of elements
+    li
+      | Added New Layer Type: Audio Layer
+    li
+      | Version 5.2. is Introducing the Possibilities of usage of Addons.
+    li
+      | WhiteBoard Addon 1.0 Included
+    li
+      | Added Vimeo "No Controls" option to hide the Control Panel of Vime Videos on request
+    li
+      | Added "Pause on Slide" option to stop the Auto Play Progress on certain slides
+    li
+      | Added an option to Wait for revapi.revstart() Method to start the Slider. This allows to start the Slider on request
+    li
+      | Added Option to Change Style of Navigation based on Slide (Slide and Slider adds individual Classes to the Slider which allows to create Custom Slide based Styling for Navigation Elements)
+    li
+      | Added "Invisible Slide", which is only available due API Actions
+    li
+      | Added Global Mute for All Media Action to mute the whole Slider
+  .change
+    strong[style="font-weight:700"]
+      | Changes
+  ul
+    li
+      | Calculation of HTML5 Videos on IE Edge has been changed to respoect the Cover mode in all responsive mode also
+    li
+      | HTML5 Video leaves automaticaly FullScreen Mode when it reach the end of the Video and Next Slide at End selected
+    li
+      | HTML5 Video does not show Cover image if Pause Mode is selected and Video is on FullScreen Mode
+    li
+      | Updated Vimeo API
+    li
+      | Images, Videos and Audios will get Line height 0px to avoid position distortions on small elements
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Parallax Effect if slider is higher than screen height to avoid an odd jump effect
+    li
+      | Fix for border-radius not working on hover state in certain cases
+    li
+      | Fix for Cover Mode not beeing applied to all devices for image layers in certain cases
+    li
+      | Fixed a minor jQuery bug in Slider Settings on Hover over different options
+    li
+      | Fix for Mouse Scroll Option. The values on/off were interchanged
+    li
+      | Fixed a bug which would not allow to go to next slide If Show Only Poster on Mobile was selected on HTML5 Videos
+    li
+      | Slotholder and BG Video got own z-index to fix some layer / video covering issues in Carousel mode
+    li
+      | Fixed an issue where SlideLink on RTL environment was not available
+    li
+      | Fixed KenBurns issues on RTL Environment
+    li
+      | Fixed Bug with Static Layers if Static Layer was set to only show on Slider Hover
+    li
+      | Fixed Video Background Loop And Keep Slider Progress Function
+    li
+      | Fixed YouTube API Issues, (Mute, Loop, Auto Start, Next Slide Bugs due the latest YT Api)
+  h3.version-number
+    | Version 5.1.6 StarPath (05th January 2016)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added MouseWheel Scroll option "carousel" to allow infinite MouseWheel scroll on Sliders in both direction. PIf enabled, slider will not allow page to scroll during wheel functions on Slider Container (Possible Options "on" "off" "carousel"
+  .change
+    strong[style="font-weight:700"]
+      | Changes
+  ul
+    li
+      | Upgraded FontAwesome Library to latest version 4.5.0
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Out of ViewPort Preloading and Prestarting was calculating the values wrongly. Issue is fixed in this release
+    li
+      | Min amount of Used Fingers for Touch/Scroll/Link was set to 50 as default, which broke any kind of Touch function on Mobiles in version 5.1.5. Issue is fixed now
+  h3.version-number
+    | Version 5.1.5 StarPath (15th Dezember 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added a new Method "revremoveslide(slideindex)" to remove a slide from the Slider on demand
+    li
+      | Added a new option to each Slide "Hide after Loop" -> data-hideafterloop="0" (loop) which will remove the Slide from the Slider after x amount of loop of that certain slide. 0 will ignore the option.
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed PanZoom/KenBurns Disabling on Mobile function
+    li
+      | Fixed Swipe Treshold and Fingers Options which were ignored in earlier version
+    li
+      | Fixed and issue with Static Layer Parallax handling
+  h3.version-number
+    | Version 5.1.4 StarPath (28th November 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added Video Toggle Action
+    li
+      | Added Mute, UnMute, Toggle Mute Action
+    li
+      | Added Toggle Functions for HTML Layers. Toggled Layers can have two states if any Toggle Action is activated
+  .change
+    strong[style="font-weight:700"]
+      | Changes
+  ul
+    li
+      | Video will play muted/unmuted based on the last state of the Mute Button at Slide Load
+    li
+      | Changed data-posterOnMobile to data-noposteronmobile. Fallback on old value still exists
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Fullcover / FullWidth sizing issues of Videos in Backend on differnet Layer Grid sizes
+    li
+      | Fixed Video issues, where Play/Stop video button was not triggering HTML5, YouTube and Vimeo videos correctly
+    li
+      | Fixed HTML5 Video Actions
+    li
+      | Fixed video actions where video Start at was set
+    li
+      | Fixed video "start at" and "end at" not resetting in Slide Editor after adding multiple videos
+    li
+      | Fixed a bug where Layers of one Slider was animated in the wrong timeline if other Slider changed the slide. Some crosscall issue between independent sliders
+    li
+      | Fixed an issue where Videos after Next Slide At End was not rewinded withouth the Force Rewind feature
+    li
+      | Fixed Parallax Flickering in Safari and Google Chrome
+  h3.version-number
+    | Version 5.1.2 StarPath (14th November 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added a key listener which will allow to close Fullscreen mode with ESC once it has been triggered by FullScreen Action
+    li
+      | Added two new Premium Sliders
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed HTML5 Start/End Time issues, and HTML5 Seekbar, Play Button issues
+    li
+      | Fixed a strange bug in Safari, where end of the Video the Slider skipped one following slide
+    li
+      | Fixed an issue where the slider could not be loaded on localhosts
+    li
+      | Fixed an issue where duplicated elements in Editor got the wrong zIndex position
+  h3.version-number
+    | Version 5.1.1 StarPath (12th November 2015)
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed a very rare bug where a slide may change it's selected background image
+    li
+      | Fixed hover color not working
+    li
+      | Fixed some CSS Issues
+    li
+      | Fixed Box Slots where Amount of Slots could not be changed
+    li
+      | Fixed HTML5 Crop Issues for IE11 and Edge Browsers
+    li
+      | Fixed a bug where Swipe was not available on elements with links
+    li
+      | Fixed a bug where Parallax elements jumped on half scrolled position
+  h3.version-number
+    | Version 5.1 StarPath (19th October 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added Enable/Disable FullScreen Video Button for YouTube and HTML5 Videos. Option is available due the Video Settings Panel only in Layer Video Mode.
+    li
+      | Added FullScreen Toggle, Go FullScreen and Exit FullScreen Actions, to allow Slider Revolution to open in Fullscreen from any Layout mode
+    li
+      | Added Tabs to the Metis Navigation
+    li
+      | Added new 3D Parallax Feature
+    li
+      | Added new Examples
+    li
+      | Added new Transitions
+  .change
+    strong[style="font-weight:700"]
+      | CHNAGES
+  ul
+    li
+      | Added some CSS changes to avoid Theme overwrites
+    li
+      | Using Toggle/Play/Stop Slider will restart Progress of Slider, even if it is stopped due Stop At Slide options
+    li
+      | Renamed action to Play/Pause/Stop Slider for more transparencity
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Poster View only on Mobile and Disable Video on Mobile features
+    li
+      | Fixed Stop on Hover function. It will keep the Slider paused also if Next slide has been called
+    li
+      | Fixed Full Slider Link Issues where next,previous,slide index and Scroll Under Links were not working well
+    li
+      | Importing Templates with bigger file size will request a bigger TimeOut to avoid Import failures or will give a clear feedback for further Debugging
+    li
+      | Fixed a bug with Focus Listener where the Option had no real effect on the Blur/Focus events.
+    li
+      | Fixed bug where font-style italic was not written properly for some layers
+    li
+      | Fixed Shape Loop Animation issue
+    li
+      | Fixed Text Layer Size issue when layer is added after a Shape element
+    li
+      | Fixed Facebook likes count not working properly in certain cases
+    li
+      | Fixed revscroll() API Method
+    li
+      | Fixed revkill() Method where Removing Slider from the Stage was broken in some situation (i.e. if Looping Elements or navigation elements were present)
+  h3.version-number
+    | Version 5.0.8.5 StarPath (15th September 2015)
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Static Layers Position calculation issues.
+    li
+      | Fixed Typo Failure in the Navigation Styling
+    li
+      | Added a Workaround for YouTube Video API's with broken Origin attributes. (i.e. http://www.domain.com vs. http://domain.com)
+    li
+      | Fixed YouTube Cover Video Loop issue
+    li
+      | Fixed an issue where Disable Force FullWidth reseted to "off" after reloading the Slider Settings
+    li
+      | Fixed Next Slide on Focus in FireFox where Slider skipped 1 Slide after Focusing Browser Tab again
+  h3.version-number
+    | Version 5.0.8.1 StarPath (12th September 2015)
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIX
+  ul
+    li
+      | Fixed a bug where images could not be loaded from relative paths like "../../". Slider was not working at all, or printed many missing images Error in Console log.
+  h3.version-number
+    | Version 5.0.8 StarPath (11th September 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | FaceBook API 2.4 support
+    li
+      | Added Disable Force FullWidth for FullScreen Slider option , to be able to set FullScreen Slider floated horizontal. fullScreenAutoWidth:"on" to disable ful width forcing on FullSceen Layout
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+      | Added a new 5 sec Rule which will skip Lazy Loading and Overall Loading processes in case no Answers comes from Server, and process the Slider further
+    li
+      | Added a new Warning in case SSL Certificate is old or not any more active
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed a bug where Static Images with Links in lazy Load mode was not showing up correctly
+    li
+      | Fixed a bug where Layers were flashing or not visible at all in "Show Layer on Slider Hover" mode
+    li
+      | Fixed FaceBook Stream Issues due Api Changes.
+    li
+      | Fixed a bug where Video Poster Images from HTTPS Pages could not be loaded well
+    li
+      | Fixed a missing closing Tag in HTML5 Video elements which broke IE11
+    li
+      | Fixed an issue where Mobile Sliders stucked when Video "autoplay" was enabled
+    li
+      | Fixed Static Layer Position problems if Outer Left Navigation was enabled
+  h3.version-number
+    | Version 5.0.7 StarPath (5th September 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Now First Slide can be always the same (Alternative First Slide) even if the rest order of slides are Randomzied
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Lazy Loading Fixes. Due an internal failure, none of the Lazy Loading option was working. Single, Smart and Full Lazy Loading are available again.
+    li
+      | Fixed a bug where HTML5 Cover Videos in IE did not really cover the slider.
+  h3.version-number
+    | Version 5.0.6 StarPath (2nd September 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added New Layer Scale mode "Cover" and "Stretch" to be able to scale Layer images proportional also over the Layer grid or over the slide
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Uncaught TypeError: Cannot read property 'innerHTML' of null
+    li
+      | Fixed issue with 2d rotation resulting in styles not written properly on layer
+    li
+      | Fixed issue where YouTube videos could not be loaded on https origins.
+    li
+      | Fixed an issue where Next/Previous Slide Links from Full Slide Link was not processing well
+    li
+      | Fixed text-align always beeing left
+  h3.version-number
+    | Version 5.0.5 StarPath (27th August 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added "Disable Browser Blur/Focus behavior" option to not stop the Slider in case the broswer tab has been blurred
+    li
+      | Added revaddcallback() Method to add Call Back to i.e. the Parallax Module. See Documentation for further instructions
+    li
+      | Added revgetparallaxproc() Method to get the current scroll percentage
+    li
+      | Added Maximum Width option to Slider that are set to Slide Layout - Auto
+  .change
+    strong[style="font-weight:700"]
+      | CHANGES
+  ul
+    li
+      | Removed option Hide Controls for Vimeo Video Layer as this is not supported by Vimeo
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed Next Slide on Focus bug
+    li
+      | Fixed RTL Layer Aligns on Frontend. Elements now showing up in the Correct position on RTL Direction also
+    li
+      | Fixed a bug where files relative with special chars under subdomain could not be loaded
+    li
+      | Fixes the 1px Gap on the left side at some fullscreen and fullwidth Sliders
+    li
+      | Fixed a bug where Responsive Videos on alternative Layer Grids had only a dimension of 100x100px
+    li
+      | Fixed a bug where Videos not act Responsive in some situation
+    li
+      | Fixed a bug where Parallax Start Position jumps if Site is scrolled at load
+    li
+      | Fixed JetPack related bugs for compatibility
+    li
+      | Fixed an issue where media files with Parameter attached in file name were not loaded in the Slider
+    li
+      | Fixed issues if Slider is loaded through ajax
+    li
+      | Fixed issues where the Slider did not show up under certain circumstances
+  h3.version-number
+    | Version 5.0.4 StarPath (12th August 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added new Slide Transition - Slide "remove" which is the opposite transition of Slide "over"
+    li
+      | Added start volume for Videos.
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Shuffle Mode fixed
+    li
+      | Fixed a bug where files could not be loaded from Relative Path in HTTPS enviroment
+    li
+      | Fixed a bug where muted YouTube video still made a sound for 0.1ms
+    li
+      | Fixed a bug where Slider with Slide Link were not loaded well if no layers were added to the slide
+  h3.version-number
+    | Version 5.0.3 StarPath (11th August 2015)
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed a bug where layer would not fade out of the stage.
+  h3.version-number
+    | Version 5.0.2 StarPath (8th August 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | NEW FEATURES
+  ul
+    li
+      | Added jQuery 2.1.4 and 1.11.3 Support
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Fixed a bug where if Min Height was set, the Slider was broken.
+    li
+      | Fixed a bug where Slide Links did not work without existing layers.
+    li
+      | Fixed a Bug where Images with special Char Names were not loaded.
+    li
+      | Fixed a bug where PunchFont Fallbacks are printed in the content not source
+    li
+      | Fixed a bug where PunchFonts could not be edited in Essential Grid if version 5.0+ of Slider Revolution is installed
+  h3.version-number
+    | Version 5.0.1 StarPath (7th August 2015)
+  .bugfix
+    strong[style="font-weight:700"]
+      | BUGFIXES
+  ul
+    li
+      | Full Slide Link was not available after update on 5.0.0. Sizing issue is fixed now.
+  h3.version-number
+    | Version 5.0 StarPath (6th August 2015)
+  .newfeature
+    strong[style="font-weight:700"]
+      | The Technology
+  |  Our premise is "less is more" and that is reflected in the structure of our components. In order to incorporate so much functionality into our plugins, we make sure everything is build as modular as possible. 
+  ul
+    li
+      | Fully Responsive & Mobile Specific Features
+    li
+      | jQuery 1.7 - jQuery 2.x Supported
+    li
+      | Lightning Fast Greensock Animation Engine
+    li
+      | Powerful API functions
+    li
+      | Smart Font Loading
+  .newfeature
+    strong[style="font-weight:700"]
+      | General Options
+  |  We want Revolution Slider to be able to fulfill all slide based roles along with special functionality like carousels and hero blocks. If you can‘t find a specific feature, feel free to ask us! 
+  ul
+    li
+      | All Sizes Possible (Full Responsive + Revolutionary 4 Level Advanced Sizes)
+    li
+      | Hero, Carousel and Classic Slider Features
+    li
+      | Fullwidth, Fullscreen, Auto Responsive Slider sizes
+    li
+      | Unlimited Slider per page
+    li
+      | Image BG Cover, Contain, Tiling, Alignment, etc.
+    li
+      | Simple and Advanced Lazy Loading for Quicker and SEO Optimized Slider Start
+    li
+      | Link and Actions on Slides
+    li
+      | Parallax Effects, full customizeable, combined with Ken Burns and other effects (Mouse / Scroll controlled)
+    li
+      | Improved Light weight Ken Burns Effects (easier & faster)
+    li
+      | Word Premiere for Advacned Action Building
+    li
+      | Build your Social Stream supported Bulk Slider
+    li
+      | Viewport based Slide Loading and Progress
+  .newfeature
+    strong[style="font-weight:700"]
+      | Layer Capabilities
+  |  Layers have evolved from simple layers to become powerful scene building tools!
+  br
+  | Drag and Drop, Customize & Animate your way to your perfect slider. 
+  ul
+    li
+      | Huge Number of Possible Transitions
+    li
+      | Create your custom animations
+    li
+      | Set Start / End Time, Speed, Ease and Effects of any Layers
+    li
+      | Show/hide layers on Slider Effects, Events, Actions
+    li
+      | Add Unlimited Number of Layers
+    li
+      | YouTube, Vimeo, Self-Hosted HTML5 Videos, Shapes, Buttons, Predefined Buttons as Layer
+    li
+      | Set actions and links per Layers
+    li
+      | Combine Actions due different Layers and slides
+    li
+      | Option to Link to a Specific Slide via Layer
+    li
+      | Toggle Animation, Classes, video functions via Layers
+    li
+      | Variable Layer Image Sizes, full responsive and/or Device Size based
+    li
+      | Design your Layers for different Device sizes after your needs
+    li
+      | Option to Hide Layers on Any Devices
+  .newfeature
+    strong[style="font-weight:700"]
+      | Slider Navigation
+  |  We have implemented almost all navigation types you can think of, which can be aligned anywhere on the stage.
+  br
+  | Be in full control with Slider Revolution Navigation! 
+  ul
+    li
+      | Bullet, Button, Tabs and Thumbnail Navigation, single or mixed mode. Any position like outter,inner, aligned etc.
+    li
+      | Left/Right, Top/Bottom Mouse Scroll events.
+    li
+      | Vertical/Horizontal Keyboard actions
+    li
+      | Mobile Touch Enabled (Optional)
+    li
+      | Drag and Pull Carousel Feature
+    li
+      | "Stop Slide Timer on Hover" Function
+    li
+      | Auto-Hiding of Navigation with Delay Option
+    li
+      | Optional Countdown Timer Line
+    li
+      | Set Position, color, size of Time Line
+    li
+      | Set Size, visibility, amount and behaviour of Thumbs, Tabs, Bullets, Arrows
+    li
+      | Hide / Enable Navigation on Mobile Devices
+    li
+      | Keyboard Navigation
+    li
+      | Fancy Navigation Skins with Slider Preview
+  .newfeature
+    strong[style="font-weight:700"]
+      | Video Features
+  ul
+    li
+      | AutoPlay - Always, only first time, skip first time, wait for action
+    li
+      | Stop video on Blur, Play Video only in ViewPort
+    li
+      | Rewind, or keep current progress time
+    li
+      | Set Star and End time
+    li
+      | Loop, Loop and Progress Slide
+    li
+      | Fullscreen, fullwidth, boxed
+    li
+      | Navigation features
+    li
+      | Action based controll (due other layers)
+    li
+      | New Video API, Events and Methods to controll media outside of the Slider
+  .newfeature
+    strong[style="font-weight:700"]
+      | Get Involved!
+  |  Is there a feature you would like to see?
+  br
+  | We will go through all your feedback weekly and pick the most requested features to be included in a future update!
+  br
+  a[href="http://codecanyon.net/user/themepunch#contact"]
+    | Contact us via our Profile Form
+  br
+  br
+  br

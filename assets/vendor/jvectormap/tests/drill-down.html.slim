@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title
+      | jVectorMap demo
+    link[rel="stylesheet" media="all" href="../jquery-jvectormap.css"]
+    script[src="assets/jquery-1.8.2.js"]
+    script[src="../jquery-jvectormap.js"]
+    script[src="../lib/jquery-mousewheel.js"]
+    script[src="../src/jvectormap.js"]
+    script[src="../src/abstract-element.js"]
+    script[src="../src/abstract-canvas-element.js"]
+    script[src="../src/abstract-shape-element.js"]
+    script[src="../src/svg-element.js"]
+    script[src="../src/svg-group-element.js"]
+    script[src="../src/svg-canvas-element.js"]
+    script[src="../src/svg-shape-element.js"]
+    script[src="../src/svg-path-element.js"]
+    script[src="../src/svg-circle-element.js"]
+    script[src="../src/svg-image-element.js"]
+    script[src="../src/svg-text-element.js"]
+    script[src="../src/vml-element.js"]
+    script[src="../src/vml-group-element.js"]
+    script[src="../src/vml-canvas-element.js"]
+    script[src="../src/vml-shape-element.js"]
+    script[src="../src/vml-path-element.js"]
+    script[src="../src/vml-circle-element.js"]
+    script[src="../src/map-object.js"]
+    script[src="../src/region.js"]
+    script[src="../src/marker.js"]
+    script[src="../src/vector-canvas.js"]
+    script[src="../src/simple-scale.js"]
+    script[src="../src/numeric-scale.js"]
+    script[src="../src/ordinal-scale.js"]
+    script[src="../src/color-scale.js"]
+    script[src="../src/data-series.js"]
+    script[src="../src/proj.js"]
+    script[src="../src/map.js"]
+    script[src="../src/multimap.js"]
+    script[src="assets/jquery-jvectormap-data-us-lcc-en.js"]
+    script
+      |  $(function(){ var map1, map2; new jvm.MultiMap({ container: $('#map1'), maxLevel: 1, mapUrlByCode: function(code, multiMap){ return 'assets/us/jquery-jvectormap-data-'+code.toLowerCase()+'-'+multiMap.defaultProjection+'-en.js'; }, main: { map: 'us_lcc_en' } }); }); 
+  body
+    #map1[style="width: 900px; height: 600px"]

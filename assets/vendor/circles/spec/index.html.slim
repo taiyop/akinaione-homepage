@@ -1,0 +1,27 @@
+html
+  head
+    title
+      | Circles
+    style
+      |  #canvas .circle { display: inline-block; margin: 1em; } .circles-decimals { font-size: .4em; } 
+  body
+    #canvas
+      #circles-1.circle
+      #circles-2.circle
+      #circles-3.circle
+      #circles-4.circle
+      #circles-5.circle
+      br
+      button#add_button
+        | Value +10
+      button#substract_button
+        | Value -10
+      button#add_width_button
+        | Width +10
+      button#substract_width_button
+        | Width -10
+      button#colors_button
+        | Swap colors
+    script[src="../circles.min.js"]
+    script
+      |  //@ http://jsfromhell.com/array/shuffle [v1.0] function shuffle(o){ //v1.0 for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x); return o; } var colors = [ ['#D3B6C6', '#4B253A'], ['#FCE6A4', '#EFB917'], ['#BEE3F7', '#45AEEA'], ['#F8F9B6', '#D2D558'], ['#F4BCBF', '#D43A43'] ], circles = []; for (var i = 1; i <= 5; i++) { var child = document.getElementById('circles-' + i), percentage = 31.42 + (i * 9.84); circles.push(Circles.create({ id: child.id, value: percentage, radius: 60, width: 10, colors: colors[i - 1] })); } document.getElementById('add_button').onclick = function() { for(var i = 0, l = circles.length; i < l; i++) circles[i].update(circles[i]._value + 10, 250); }; document.getElementById('substract_button').onclick = function() { for(var i = 0, l = circles.length; i < l; i++) circles[i].update(circles[i]._value - 10, 250); }; document.getElementById('add_width_button').onclick = function() { for(var i = 0, l = circles.length; i < l; i++) circles[i].updateWidth(circles[i]._strokeWidth + 10); }; document.getElementById('substract_width_button').onclick = function() { for(var i = 0, l = circles.length; i < l; i++) circles[i].updateWidth(circles[i]._strokeWidth - 10); }; document.getElementById('colors_button').onclick = function() { colors = shuffle(colors); for(var i = 0, l = circles.length; i < l; i++) circles[i].updateColors(colors[i]); }; 

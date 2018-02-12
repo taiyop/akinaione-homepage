@@ -1,0 +1,196 @@
+doctype html
+html[lang="en"]
+  head
+    title
+      | Master Slider :: Transition Gallery
+    link[rel="stylesheet" href="style/style.css" type="text/css" media="screen" title="no title" charset="utf-8"]
+  body
+    header
+      .header-bar
+        h1.title
+          | Master Slider Transition Gallery
+        ul.nav
+          li
+            a.faq[href="http://support.averta.net/envato/faq/master-slider/"]
+              | FAQ
+          li
+            a.forum[href="http://support.averta.net/envato/support/master-slider/"]
+              | Support Forum
+          li
+            a.doc[href="http://www.masterslider.com/doc/"]
+              | Documentation
+          li
+            a.home[href="http://www.masterslider.com/"]
+              | Home
+    .main-cont
+      .sidebar
+        .logo-cont
+          img[src="images/logo.gif" alt="Master Slider"]
+        .options
+          .opttions-title.first
+            | Show Transition
+          .options-cont
+            label
+              | Delay
+            input#showdelay[type="text" value="0"]
+            label
+              | ms
+            div[style="clear:both"]
+
+            label
+              | Duration
+            input#showduration[type="text" value="1800"]
+            label
+              | ms
+            div[style="clear:both"]
+
+            label
+              | Ease
+            select#showease
+              option[value="linear" selected="selected"]
+                | linear
+              option[value="easeInCubic"]
+                | easeInCubic
+              option[value="easeOutCubic"]
+                | easeOutCubic
+              option[value="easeInOutCubic"]
+                | easeInOutCubic
+              option[value="easeInCirc"]
+                | easeInCirc
+              option[value="easeOutCirc"]
+                | easeOutCirc
+              option[value="easeInOutCirc"]
+                | easeInOutCirc
+              option[value="easeInExpo"]
+                | easeInExpo
+              option[value="easeOutExpo"]
+                | easeOutExpo
+              option[value="easeInOutExpo"]
+                | easeInOutExpo
+              option[value="easeInQuad"]
+                | easeInQuad
+              option[value="easeOutQuad"]
+                | easeOutQuad
+              option[value="easeInOutQuad"]
+                | easeInOutQuad
+              option[value="easeInQuart"]
+                | easeInQuart
+              option[value="easeOutQuart"]
+                | easeOutQuart
+              option[value="easeInOutQuart"]
+                | easeInOutQuart
+              option[value="easeInQuint"]
+                | easeInQuint
+              option[value="easeOutQuint"]
+                | easeOutQuint
+              option[value="easeInOutQuint"]
+                | easeInOutQuint
+              option[value="easeInSine"]
+                | easeInSine
+              option[value="easeOutSine"]
+                | easeOutSine
+              option[value="easeInOutSine"]
+                | easeInOutSine
+              option[value="easeInBack"]
+                | easeInBack
+              option[value="easeOutBack"]
+                | easeOutBack
+          .opttions-title
+            | Hide Transition
+          .options-cont
+            label
+              | Start
+            input#hidetime[type="text" value=""]
+            label
+              | ms
+            div[style="clear:both"]
+
+            label
+              | Duration
+            input#hideduration[type="text" value=""]
+            label
+              | ms
+            div[style="clear:both"]
+
+            label
+              | Ease
+            select#hideease
+              option[value="null" selected="selected"]
+                | --select--
+              option[value="linear"]
+                | linear
+              option[value="easeInCubic"]
+                | easeInCubic
+              option[value="easeOutCubic"]
+                | easeOutCubic
+              option[value="easeInOutCubic"]
+                | easeInOutCubic
+              option[value="easeInCirc"]
+                | easeInCirc
+              option[value="easeOutCirc"]
+                | easeOutCirc
+              option[value="easeInOutCirc"]
+                | easeInOutCirc
+              option[value="easeInExpo"]
+                | easeInExpo
+              option[value="easeOutExpo"]
+                | easeOutExpo
+              option[value="easeInOutExpo"]
+                | easeInOutExpo
+              option[value="easeInQuad"]
+                | easeInQuad
+              option[value="easeOutQuad"]
+                | easeOutQuad
+              option[value="easeInOutQuad"]
+                | easeInOutQuad
+              option[value="easeInQuart"]
+                | easeInQuart
+              option[value="easeOutQuart"]
+                | easeOutQuart
+              option[value="easeInOutQuart"]
+                | easeInOutQuart
+              option[value="easeInQuint"]
+                | easeInQuint
+              option[value="easeOutQuint"]
+                | easeOutQuint
+              option[value="easeInOutQuint"]
+                | easeInOutQuint
+              option[value="easeInSine"]
+                | easeInSine
+              option[value="easeOutSine"]
+                | easeOutSine
+              option[value="easeInOutSine"]
+                | easeInOutSine
+              option[value="easeInBack"]
+                | easeInBack
+              option[value="easeOutBack"]
+                | easeOutBack
+        .cpyr
+          | Designed by 
+          a[href="http://www.averta.net/" title="Averta" style="text-decoration: none; color:rgb(94, 115, 148)" target="_blank"]
+            | Averta
+          | . 
+      .content
+        .preview-cont
+          #scene.scene
+            .sence-control
+              label
+                | W: 
+              input#sw[type="text" value="500"]
+              label
+                | H: 
+              input#sh[value="350" type="text"]
+            #box.box
+
+        .output-cont
+          .output-title
+            | Output
+          pre#output
+
+        #list-cont.list-cont
+
+    script[src="js/jquery-1.8.0.min.js"]
+    script[src="js/transition-dic.js"]
+    script[src="js/main.js"]
+    script
+      |  var _3dt = new TransitionGallery(document.getElementById('list-cont') , transitions).create(); 
